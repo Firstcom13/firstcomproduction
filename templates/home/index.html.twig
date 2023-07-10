@@ -1,0 +1,136 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	FIRSTCOM - Créateur de valeurs
+{% endblock %}
+
+{% block body %}
+
+<div class="modal" tabindex="-1" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">VOUS VOULIEZ TOUT, VRAIMENT TOUT SAVOIR SUR NOUS ?</h5>
+      </div>
+      <div class="modal-body">
+        <p>Vous étiez entré dans ce site comme on entre en religion ? Vous aviez même préparé votre carnet de chèques pour réserver notre prochaine mission ?</p>
+		<p>Malheureusement, à force d’enchainer les projets les plus fous pour nos clients, nous avons laissé de côté notre propre site web.</p>
+		<p>Nous nous excusons sincèrement pour l’immense déception que nous vous causons. Promis, la suite arrive très vite !</p>
+		<p>Et d'ici là, n’hésitez pas à nous contacter, notre formulaire est bien câblé &#128521;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="container1">
+	<div class="row contact_page">
+		<div class="col-lg-7 col-sm-7 col-xs-12 col-12 d-flex flex-column justify-content-center div-titre">
+			<h1 class="card-home-title">CREATEUR DE VALEURS, ACCELERATEUR DE</h1>
+			<h2><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+		</div>
+		<div class="col-lg-5 col-sm-5 col-xs-12 col-12 d-flex justify-content-end align-items-center div-img">
+			<img class="image_king" src="https://zupimages.net/up/23/24/qmcd.png">
+		</div>
+	</div>
+</section>
+
+
+<section class="mask_contact">
+	<img class="" src="https://zupimages.net/up/23/23/fl23.png">
+</section>
+
+<div class="row contact_page home_page borderDashed" onclick="location.href='{{ path('app_contact') }}';">
+	<div class="col-sm-12 col-md-12 mb-4">
+		<h3 class="title-home-part1">FIRSTCOM, AU SERVICE DE LA PERFORMANCE DES MARQUES</h3>
+	</div>
+
+	<div class="col-sm-12 col-md-4 contact_part1">
+		<img class="image_ampoule img-fluid" src="https://zupimages.net/up/23/24/on3b.png">
+	</div>
+	<div class="col-sm-12 col-md-6 home_parts">
+		<h3 class="cartouche">CONSEIL ET STRATÉGIE</h3>
+		<h4 class="card-title-home">ON A TOUS BESOIN D’UN MAZARIN À SES CÔTÉS</h4>
+		<p class="card-text-home">FAIRE FACE À UNE CROISSANCE TROP RAPIDE OU QUI TEND À S’ESSOUFLER, À UN DÉVELOPPEMENT PAR OPPORTUNITÉ PAS FORCÉMENT BIEN ANTICIPÉ, À UNE CRISE QUI SURGIT L’AIR DE RIEN, LE TEMPS D’UN SIMPLE TWEET.</p>
+		<p class="card-text-mini-home">
+			Dirigeants et managers ont parfois besoin d’un regard extérieur sur leur business, leur structuration ou leur développement pour repartir de plus belle. Un regard impartial, dépourvu d’affecte, capable d’analyser le marché et ses opportunités, l’offre proposée et la pertinence du go-to-market.</p>
+	</div>
+	<div class="col-sm-12 col-md-2 fleche d-md-none d-lg-flex">
+		<a class="" href="{{ path('app_contact') }}">
+			<img class="" src="https://zupimages.net/up/23/24/axh1.png">
+		</a>
+	</div>
+</div>
+
+
+<div class="row home_page borderDashed background-gray" onclick="location.href='{{ path('app_contact') }}';">
+	<div class="col-sm-12 col-md-4 contact_part1">
+		<img class="image_ampoule img-fluid" src="https://zupimages.net/up/23/24/yc63.png">
+	</div>
+	<div class="col-sm-12 col-md-6 home_parts">
+		<h3 class="cartouche">CRÉATION DE CONTENUS</h3>
+		<h4 class="card-title-home">POUR ÊTRE CRÉATIF, PORTER DES MOCASSINS À PAMPILLES NE SUFFIT PAS</h4>
+		<p class="card-text-home">RACONTER VOTRE ENTREPRISE ET VOS PRODUITS AVEC UN CLAVIER OU UNE CAMÉRA, UN APPAREIL PHOTO OU UN STYLO NUMÉRIQUE POUR UN STORYTELLING IMPACTANT.</pclass=>
+			
+	</div>
+	<div class="col-sm-12 col-md-2 fleche d-md-none d-lg-flex">
+		<a class="fleche" href="{{ path('app_contact') }}">
+			<img class="d-md-block d-none" src="https://zupimages.net/up/23/24/axh1.png">
+		</a>
+	</div>
+</div>
+
+
+<div class="row home_page borderDashed" onclick="location.href='{{ path('app_contact') }}';">
+	<div class="col-sm-12 col-md-4 contact_part1">
+		<img class="image_ampoule" src="https://zupimages.net/up/23/24/deip.png">
+	</div>
+	<div class="col-sm-12 col-md-6 home_parts">
+		<h3 class="cartouche">TECH & DIGITAL</h3>
+		<h4 class="card-title-home">ET CHEZ VOUS, Y A QUOI À DIGITALISER ?</h4>
+		<p class="card-text-home">EN PLUS DE CRÉER DES SITES WEB JOLIS ET QUI DONNENT ENVIE DE CLIQUER PARTOUT, ON AIME PLUS QUE TOUT S’ATTAQUER À DES DÉVELOPPEMENTS COMPLEXES DESTINÉS À VOUS RENDRE LA VIE FACILE.</p>
+	</div>
+	<div class="col-sm-12 col-md-2 fleche d-md-none d-lg-flex">
+		<a class="" href="{{ path('app_contact') }}">
+			<img class="d-md-block d-none" src="https://zupimages.net/up/23/24/axh1.png">
+		</a>
+	</div>
+</div>
+
+
+<div class="row home_page borderDashed background-gray" onclick="location.href='{{ path('app_contact') }}';">
+	<div class="col-sm-12 col-md-6 home_parts">
+		<h3 class="card-title-home">NOTRE APPROCHE</h3>
+		<p class="card-text-home">QUE VOUS SOYEZ UN LEADER QUI COMPTE BIEN LE RESTER, UN PETIT POUCET À L’APPÉTIT FÉROCE OU UN CHALLENGER À L’AMBITION FOLLE...</p>
+		<p class="card-text-mini-home">
+			Quels que soient votre secteur d’activité, votre taille, vos cibles, les produits ou services que vous développez ou distribuez, les plus géniaux ou les plus improbables, vous êtes tous (oui, vous aussi) soumis aux mêmes besoins...</p>
+	</div>
+	<div class="col-sm-12 col-md-2 fleche d-md-none d-lg-flex">
+		<a class="" href="{{ path('app_contact') }}">
+			<img class="" src="https://zupimages.net/up/23/24/axh1.png">
+		</a>
+	</div>
+</div>
+
+<div class="row home_page" onclick="location.href='{{ path('app_contact') }}';">
+	<div class="col-sm-12 col-md-6 home_parts">
+		<h3 class="card-title-home">ABOUT</h3>
+		<p class="card-text-home">AGENCE CONSEIL, TECH ET MARKETING FULL-SERVICE, FIRSTCOM SE POSITIONNE COMME VOTRE PARTENAIRE PRIVILÉGIÉ ET VOUS ACCOMPAGNE SUR VOS PROBLÉMATIQUES DE POSITIONNEMENT ET DE CROISSANCE.</p>
+		<p class="card-text-mini-home">
+			A la croisée d’Apple, de Publicis et de EY [on vous a dit qu’on était marseillais ?], notre team se forme au quotidien pour délivrer le meilleur des services, dans un monde digital en perpétuelle évolution.</p>
+	</div>
+	<div class="col-sm-12 col-md-2 fleche d-md-none d-lg-flex">
+		<a class="" href="{{ path('app_contact') }}">
+			<img class="" src="https://zupimages.net/up/23/24/axh1.png">
+		</a>
+	</div>
+</div>
+
+
+
+
+{% endblock %}
+
+

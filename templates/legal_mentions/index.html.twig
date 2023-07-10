@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mentions légales
+{% endblock %}
+
+{% block body %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
+
+	<div class="title_mentions">
+		<section class="div-start">
+			<h1>
+				{{ controller_name }}
+			</h1>
+		</section>
+
+		<div class="container pt-5">
+			<div class="card" id="card_mentions">
+				<h2 class="card-header" id="card_mentions_header">Le site www.firstcom.fr est édité par la SARL FIRSTCOM :</h2>
+				<div class="card-body">
+					<ul>
+						<li>Siège social : 66 Rue Montgrand 13006 Marseille</li>
+						<li>R.C.S. Marseille 415038975</li>
+						<li>APE : 7311Z</li>
+						<li>Capital : 22 500 euros</li>
+						<li>N° Identifiant Européen : FR08415038975</li>
+					</ul>
+					<p>Coordonnées de l’hébergeur du site :</p>
+					<p> OVH – 2 rue Kellermann 59100 Roubaix 1007</p>
+					<p>Numéro de déclaration de la CNIL : 1949154</p>
+
+					<p>Le moyen d’accéder aux données personnelles stockées :</p>
+					<p>Conformément à la Loi Informatique et Liberté Nº 78-17 du 06 Janvier 1978, vous disposez d’un droit d’opposition, d’accès, de rectification, d’opposition et de suppression des informations nominatives vous concernant auprès de la SARL Firstcom – 66 Rue Montgrand 13006 Marseille – Tél. 04 91 09 14 00.</p>
+					<p>Mentions légales obligatoires selon Article 43-9 et s. loi du 30/09/1986 modifié le 1/08/2000 et 21/06/2004</p>
+					<p>
+						<strong>©Firstcom 2023 – Toute reproduction ou représentation totale ou partielle de ce site par quelque procédé que ce soit, sans autorisation expresse, est interdite.</strong>
+					</p>
+
+					<p>Webdesign, intégration et développement : Firstcom</p>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>{% endblock %}

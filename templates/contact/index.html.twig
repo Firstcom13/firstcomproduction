@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Nous vous remercions pour cette prise de contact via notre site web.</h5>
+      </div>
+      <div class="modal-body">
+        <p>Nous en accusons réception et ne manquerons pas d’y donner suite au plus vite.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="container1">
+  <div class="row contact_page">
+    <div class="col-md-4 col-12 contact_part1">
+      <img class="image_blondie" src="https://zupimages.net/up/23/23/975c.png" >
+    </div>
+    <div class="col-md-3 col-12 contact_part2">
+      <h1 class="agence_contact"> AGENCE | CONTACT</h1>
+      <h2 class="card-title sous-titre">CALL ME</h2>
+      <p class="card-text contact-text">Envie de parler de stratégie, de performance, de digital ou de communication ? 
+      Envie de rejoindre la team Firstcom ? 
+      Envie de partager un café sur notre belle terrasse ensoleillée ?</p>
+    </div>
+  </div>
+  <div>
+  </div>
+</section>
+
+<section class="mask_contact">
+      <img class="" src="https://zupimages.net/up/23/23/fl23.png" >
+</section>
+
+
+<div id="container" class="container">
+  <h1 class="contact_title">NE SOYEZ PAS TIMIDE, N’HÉSITEZ PAS À
+PARTAGER AVEC NOUS VOS ENVIES DANS
+CE FORMULAIRE !</h1>
+  {# <div class="underline">
+  </div> #}
+  <div class="icon_wrapper">
+  </div>
+{{ form_start(formulaire, {'attr': {'id': 'contact_form', 'method': 'post', 'action': path('app_contact')}}) }}
+    <div class="telephone">
+        {{ form_row(formulaire.name, {
+            'label': false,
+            'attr': {'id': 'name_input', 'placeholder': 'Nom*', 'required': true}
+        }) }}
+    </div>
+    <div class="telephone">
+        {{ form_row(formulaire.firstname, {
+            'label': false,
+            'attr': {'id': 'firstname_input', 'placeholder': 'Prénom*', 'required': true}
+        }) }}
+    </div>
+    <div class="telephone">
+        {{ form_row(formulaire.society, {
+            'label': false,
+            'attr': {'id': 'society_input', 'placeholder': 'Société*', 'required': true}
+        }) }}
+    </div>
+    <div class="telephone">
+        {{ form_row(formulaire.tel, {
+            'label': false,
+            'attr': {'id': 'telephone_input', 'placeholder': 'Téléphone*', 'required': true}
+        }) }}
+    </div>
+    <div class="telephone">
+        {{ form_row(formulaire.email, {
+            'label': false,
+            'attr': {'id': 'email_input', 'placeholder': 'E-mail*', 'required': true}
+        }) }}
+    </div>
+    <div class="message">
+        {{ form_row(formulaire.message, {
+            'label': false,
+            'attr': {'id': 'message_input', 'placeholder': 'Message', 'required': true, 'cols': '30', 'rows': '5'}
+        }) }}
+    </div>
+    <div class="form-group" style="margin-bottom:15px">
+    {{ form_widget(formulaire.agree, { 'id': 'agree' }) }}
+    <label for="agree">{{ form_label(formulaire.agree, 'Par l\'inscription à ce formulaire, j\'autorise le stockage et l’utilisation de mes données par Firstcom.') }}</label>
+</div>
+<div class="form-group">
+    {{ form_widget(formulaire.autorisation, { 'id': 'autorisation' }) }}
+    <label for="autorisation">{{ form_label(formulaire.autorisation, 'Pour répondre à ma demande d’information, j’autorise Firstcom à stocker mes données renseignées dans ce formulaire.') }}</label>
+</div>
+
+    <div class="submit_firstcom">
+        {{ form_widget(formulaire.envoyer, {
+            'attr': {'id': 'form_button', 'value': 'Envoyer'}
+        }) }}
+    </div>
+{{ form_end(formulaire) }}
+
+</div><!-- // End #container -->
+{% include "map.html.twig" %}
+{% endblock %}
